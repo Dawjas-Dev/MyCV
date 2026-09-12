@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Osobista wizytówka — developer, żeglarz, UAV. Buduję systemy, pływam i projektuję.">
+<title>IMIĘ NAZWISKO — Developer · Sailor · UAV</title>
+<style>
+:root{--bg:#eee9df;--paper:#f5f1e9;--ink:#171816;--muted:#6a6963;--line:rgba(23,24,22,.17);--accent:#2f5b58;--accent2:#8c6c42;--max:1220px;--pad:clamp(20px,4vw,54px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.45;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}::selection{background:var(--ink);color:var(--bg)}.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;letter-spacing:.05em}.page{width:min(calc(100% - 2*var(--pad)),var(--max));margin:auto}
+.header{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.brand{font-size:12px;font-weight:700;letter-spacing:.13em}.nav{display:flex;gap:24px;text-transform:uppercase;font-size:10px;letter-spacing:.1em;color:var(--muted)}.nav a:hover{color:var(--accent)}
+.hero{min-height:82vh;display:grid;grid-template-columns:1.12fr .88fr;gap:40px;align-items:center;padding:54px 0 42px}.eyebrow{font-size:10px;text-transform:uppercase;color:var(--muted);margin-bottom:22px}.eyebrow b{color:var(--accent);font-weight:500}.hero h1{font-size:clamp(58px,9vw,132px);line-height:.82;letter-spacing:-.07em;text-transform:uppercase;font-weight:650;margin:0 0 30px}.hero h1 span{display:block}.hero h1 .accent{color:var(--accent)}.hero-copy{max-width:580px;font-size:clamp(18px,2vw,23px);line-height:1.25;color:#41423d}.hero-meta{align-self:end;justify-self:end;width:min(100%,390px)}.meta-grid{border-top:1px solid var(--line)}.meta{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid var(--line);font-size:10px;text-transform:uppercase}.meta span:first-child{color:var(--muted)}.stamp{margin-top:28px;display:flex;align-items:center;gap:13px;color:var(--muted);font-size:10px}.dot{width:8px;height:8px;border:1px solid var(--accent);border-radius:50%;position:relative}.dot:after{content:"";position:absolute;inset:2px;background:var(--accent);border-radius:50%;animation:pulse 2.2s infinite}
+.section{border-top:1px solid var(--line);padding:70px 0}.section-top{display:grid;grid-template-columns:150px 1fr;gap:34px;margin-bottom:38px}.num{font-size:10px;color:var(--muted);padding-top:8px}.title{font-size:clamp(36px,5vw,72px);line-height:.92;letter-spacing:-.055em;margin:0;font-weight:620}.intro{max-width:690px;font-size:18px;color:#4b4c47}
+.roles{border-top:1px solid var(--line)}.role{display:grid;grid-template-columns:85px 1.05fr 1.3fr 90px;gap:24px;align-items:center;min-height:176px;border-bottom:1px solid var(--line);position:relative;overflow:hidden;transition:background .35s ease,padding .35s ease}.role:before{content:"";position:absolute;inset:auto auto 0 0;height:2px;width:0;background:var(--accent);transition:width .45s ease}.role:hover{background:rgba(49,91,89,.055);padding-left:15px;padding-right:15px}.role:hover:before{width:100%}.role-no{color:var(--muted);font-size:11px}.role-name{font-size:clamp(32px,4vw,57px);line-height:.9;letter-spacing:-.055em;text-transform:uppercase}.role-copy{font-size:15px;color:#4f504a;max-width:460px}.role-copy strong{color:var(--ink);font-weight:600}.role-link{font-size:10px;color:var(--accent);text-transform:uppercase;letter-spacing:.09em;text-align:right}
+.detail{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.detail-lead{font-size:clamp(28px,4vw,52px);line-height:.95;letter-spacing:-.05em}.detail-copy{font-size:17px;color:#4c4d47;max-width:630px}.detail-copy p{margin:0 0 22px}.maker{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}.maker-item{background:var(--bg);padding:28px;min-height:210px;position:relative}.maker-item:hover{background:var(--paper)}.maker-item .n{font-size:10px;color:var(--muted)}.maker-item h3{font-size:27px;letter-spacing:-.04em;line-height:1;margin:55px 0 12px}.maker-item p{margin:0;max-width:400px;color:#555650;font-size:14px}.maker-item:after{content:"↗";position:absolute;right:22px;top:20px;color:var(--accent);font-size:18px}
+.statement{padding:18px 0 0}.statement-word{font-size:clamp(62px,12vw,170px);line-height:.77;letter-spacing:-.085em;text-transform:uppercase}.statement-sub{max-width:620px;margin:38px 0 0 auto;font-size:18px;color:#4a4b46}
+.contact{display:grid;grid-template-columns:1fr .7fr;gap:40px;align-items:end;min-height:60vh;padding-bottom:30px}.contact h2{margin:0;font-size:clamp(64px,11vw,150px);line-height:.78;letter-spacing:-.08em;text-transform:uppercase}.links{border-top:1px solid var(--line)}.link{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--line);font-size:11px;text-transform:uppercase;letter-spacing:.08em}.link span:first-child{color:var(--muted)}.link:hover span:last-child{color:var(--accent)}footer{border-top:1px solid var(--line);padding:16px 0 28px;display:flex;justify-content:space-between;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.1em}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .75s ease,transform .75s ease}.reveal.show{opacity:1;transform:none}.role.reveal:nth-child(2){transition-delay:.05s}.role.reveal:nth-child(3){transition-delay:.1s}.role.reveal:nth-child(4){transition-delay:.15s}.maker-item.reveal:nth-child(2){transition-delay:.07s}.maker-item.reveal:nth-child(3){transition-delay:.14s}.maker-item.reveal:nth-child(4){transition-delay:.21s}@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.6)}
+}
+@media(max-width:850px){.hero,.detail,.contact{grid-template-columns:1fr}.hero{min-height:auto;padding:74px 0}.hero-meta{justify-self:start;margin-top:24px}.section{padding:58px 0}.role{grid-template-columns:55px 1fr 80px;gap:15px;padding:25px 0}.role-copy{grid-column:2/4;max-width:600px}.detail{gap:35px}.contact{min-height:50vh;gap:50px}.maker{grid-template-columns:1fr}}
+@media(max-width:580px){.header{height:66px}.nav{gap:11px;font-size:8px}.hero h1{font-size:16vw}.hero-copy{font-size:17px}.section-top{grid-template-columns:1fr;gap:10px}.role{grid-template-columns:40px 1fr}.role-link{grid-column:2;text-align:left}.role-copy{grid-column:2}.role-name{font-size:31px}.title{font-size:39px}.statement-word{font-size:21vw}.contact h2{font-size:22vw}footer{flex-direction:column;gap:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<script>
+const PERSONAL={
+ name:"Dawid Jasiński",
+ location:"POLAND-Malbork",
+ email:"dawjasdev@gmail.com"
+};
+</script>
+<div class="page">
+<header class="header">
+<a class="brand" href="#top" id="brand">IMIĘ NAZWISKO</a>
+<nav class="nav"><a href="#roles">Work</a><a href="#maker">Build</a><a href="#contact">Contact</a></nav>
+</header>
+<main id="top">
+<section class="hero">
+<div>
+<div class="eyebrow mono reveal"><b>PERSONAL PROFILE</b> / THREE DIRECTIONS</div>
+<h1 class="reveal"><span>I build.</span><span>I sail.</span><span class="accent">I fly.</span></h1>
+<p class="hero-copy reveal">Developer. Żeglarz. Człowiek od UAV. Trzy różne środowiska, w których mogę być użyteczny — przy komputerze, na wodzie i w powietrzu.</p>
+</div>
+<div class="hero-meta reveal">
+<div class="meta-grid"><div class="meta mono"><span>Based in</span><span id="location">POLAND</span></div><div class="meta mono"><span>Current work</span><span>FREELANCE / FULL-STACK</span></div><div class="meta mono"><span>Experience</span><span>SOFTWARE · SEA · UAV</span></div></div>
+<div class="stamp mono"><i class="dot"></i><span>AVAILABLE FOR THE RIGHT PROJECT</span></div>
+</div>
+</section>
+
+<section class="section" id="roles">
+<div class="section-top"><div class="num mono">01 / WORK</div><div><h2 class="title reveal">Three ways<br>to put me to work.</h2><p class="intro reveal">Nie zamykam się w jednej etykiecie zawodowej. Mam kilka dziedzin, w których zdobywałem realne doświadczenie — i każdą z nich mogę potraktować jako pracę, nie tylko hobby.</p></div></div>
+<div class="roles">
+<article class="role reveal"><div class="role-no mono">01</div><div class="role-name">Developer</div><div class="role-copy"><strong>Freelance full-stack developer</strong> od kilku lat. Buduję systemy CRM i SaaS, automatyzuję procesy, piszę skrypty w Pythonie i pracuję z OpenCV. Tworzę również aplikacje mobilne i PWA — od warstwy frontendowej po backend i integracje. Lubię rozwiązania, które są proste w użyciu, dobrze przemyślane i po prostu działają.</div><div class="role-link mono">software ↗</div></article>
+<article class="role reveal"><div class="role-no mono">02</div><div class="role-name">Sailor</div><div class="role-copy"><strong>Żegluję od wielu lat.</strong> Mazury mam opływane wzdłuż i wszerz, pływałem na wielu jachtach i dobrze znam ten świat. Najbardziej lubię samą wolność żeglowania — wiatr, wodę, przestrzeń i ten moment, kiedy cała uwaga skupia się na łódce, kursie i warunkach.</div><div class="role-link mono">on water ↗</div></article>
+<article class="role reveal"><div class="role-no mono">03</div><div class="role-name">UAV</div><div class="role-copy"><strong>Od ponad 10 lat buduję drony i samoloty RC.</strong> Projektuję własne części, łączę elektronikę, mechanikę i oprogramowanie. Najbardziej interesuje mnie samo latanie, konstrukcja modeli i samolotów oraz wszystko, co pozwala lepiej zrozumieć i kontrolować maszynę w powietrzu.</div><div class="role-link mono">in air ↗</div></article>
+</div>
+</section>
+
+<section class="section">
+<div class="section-top"><div class="num mono">02 / EXPERIENCE</div><div><h2 class="title reveal">Different tools.<br>Same instinct.</h2></div></div>
+<div class="detail">
+<div class="detail-lead reveal">Lubię rozumieć, jak coś działa — a potem sprawdzić, czy potrafię zrobić to sam.</div>
+<div class="detail-copy reveal"><p>W software'ze od kilku lat pracuję jako freelancer full-stack developer. Buduję systemy CRM i SaaS, tworzę automatyzacje, skrypty w Pythonie i rozwiązania wykorzystujące OpenCV. Zajmuję się również aplikacjami mobilnymi i PWA, więc dobrze czuję się zarówno przy interfejsie, jak i przy backendzie, integracjach i całym procesie dowożenia produktu.</p><p>W UAV od ponad dekady buduję własne drony i samoloty zdalnie sterowane. Projektuję części, pracuję z elektroniką, mechaniką i oprogramowaniem, a potem testuję wszystko w praktyce. To hobby, które nauczyło mnie cierpliwości do prototypów i tego, że najlepszy sposób na zrozumienie rozwiązania to często po prostu zbudować je samemu.</p><p>Żeglarstwo daje mi zupełnie inne środowisko. Od lat pływam po Mazurach i na różnych jachtach, przede wszystkim dla samej radości bycia na wodzie — dla wolności, wiatru i przestrzeni. Lubię ten kontrast względem pracy przy komputerze.</p><p>Do tego dochodzą DIY, elektronika i druk 3D. Lubię mieć możliwość zaprojektowania części, wydrukowania jej, poprawienia i złożenia całości własnymi rękami. Wszystkie te zainteresowania mają wspólny mianownik: ciekawość, tworzenie i uczenie się przez praktykę.</p></div>
+</div>
+</section>
+
+<section class="section" id="maker">
+<div class="section-top"><div class="num mono">03 / BUILD</div><div><h2 class="title reveal">I don't only use<br>things. I make them.</h2><p class="intro reveal">DIY, elektronika i druk 3D są naturalnym rozszerzeniem moich zainteresowań. Kiedy gotowe rozwiązanie nie pasuje, wolę zaprojektować własne.</p></div></div>
+<div class="maker">
+<div class="maker-item reveal"><div class="n mono">A / PROTOTYPE</div><h3>Design → print → test</h3><p>Projektuję części i obudowy, drukuję je, montuję i sprawdzam w praktyce. Prototyp ma być użyteczny, nie tylko ładny.</p></div>
+<div class="maker-item reveal"><div class="n mono">B / ELECTRONICS</div><h3>Hardware / wiring / systems</h3><p>Elektronika jest dla mnie kolejnym narzędziem do budowania działających rzeczy — szczególnie tam, gdzie software spotyka świat fizyczny.</p></div>
+<div class="maker-item reveal"><div class="n mono">C / UAV</div><h3>Build the aircraft</h3><p>Drony i modele RC robię od podstaw: konstrukcja, części, elektronika, integracja i testy.</p></div>
+<div class="maker-item reveal"><div class="n mono">D / PRACTICAL</div><h3>Fix it. Improve it.</h3><p>Jeżeli coś można naprawić, przerobić albo zrobić lepiej własnymi rękami, to zwykle warto przynajmniej spróbować.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="statement"><div class="statement-word reveal">BUILD.<br>LEARN.<br>GO.</div><p class="statement-sub reveal">Od kodu po pokład jachtu i elektronikę w UAV. Szukam pracy i projektów, w których te umiejętności nie muszą być rozdzielone na trzy osobne pudełka.</p></div>
+</section>
+
+<section class="section" id="contact"><div class="contact"><h2 class="reveal">Let's<br>build<br>something.</h2><div class="links reveal"><a class="link" id="emailLink" href="#"><span class="mono">Email</span><span id="emailText">your@email.com</span></a></div></div></section>
+</main>
+<footer><span>© <span id="year"></span> <span id="footerName">IMIĘ NAZWISKO</span></span><span class="mono">DEVELOPER · SAILOR · UAV / R.01</span></footer>
+</div>
+<script>
+document.getElementById('brand').textContent=PERSONAL.name;document.getElementById('footerName').textContent=PERSONAL.name;document.getElementById('location').textContent=PERSONAL.location;document.getElementById('emailText').textContent=PERSONAL.email;document.getElementById('emailLink').href='mailto:'+PERSONAL.email;document.getElementById('year').textContent=new Date().getFullYear();
+const io=new IntersectionObserver((entries,obs)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target)}})},{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body></html>
