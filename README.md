@@ -15,7 +15,7 @@
 
 **Linki:**
 
-* [Kod źródłowy](https://github.com/Dawjas-Dev/WhereDrift)
+* [link do repozytorium](https://github.com/Dawjas-Dev/WhereDrift)
 ---
 
 
